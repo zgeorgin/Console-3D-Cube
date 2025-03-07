@@ -14,8 +14,8 @@ int main() {
     return 1;
   }
 
-  Screen s(80, w.ws_row);
-  Cube c(20, {10, 5, 0}, true);
+  Screen s(w.ws_col, w.ws_row);
+  Cube c(w.ws_row / 2.0, {w.ws_row / 2.0, w.ws_row / 4.0, 0}, true);
   Vec3 rotationAxis(1 / sqrt(2), 1 / sqrt(2), 0);
   double rotationAngle = M_PI / 12.0;
   for (int i = 0; i < 100; i++) {
