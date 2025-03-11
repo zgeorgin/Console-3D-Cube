@@ -43,7 +43,6 @@ bool Cube::rayCast(size_t x, size_t y) {
 void Cube::rotate(const Vec3 &axis, double angle) {
   Quaternion q(cos(angle / 2.0), sin(angle / 2.0) * axis);
   Quaternion q_n(cos(-angle / 2.0), sin(-angle / 2.0) * axis);
-  // std::cout << points[0].y << std::endl;
   for (Vec3 &point : points) {
     Quaternion newPos = q * Quaternion(0, point - center) * q_n;
     point = newPos.imag + center;

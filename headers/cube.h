@@ -1,7 +1,7 @@
 #pragma once
 #include <cstddef>
 #include <stddef.h>
-#include <structs.h>
+#include <vec.h>
 #include <vector>
 #include <quaternion.h>
 #include <math.h>

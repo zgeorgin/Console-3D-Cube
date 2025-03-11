@@ -1,6 +1,6 @@
 #pragma once
 
-#include <structs.h>
+#include <vec.h>
 
 struct Quaternion {
   double real;
