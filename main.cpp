@@ -15,11 +15,12 @@ int main() {
   }
 
   Screen s(w.ws_col / 3, w.ws_row);
-  Cube c(w.ws_row / 2.0, {w.ws_row / 2.0, w.ws_row / 4.0, 0}, true);
+  Cube c(w.ws_row / 2.0, {w.ws_row / 2.0, w.ws_row / 4.0, -w.ws_row / 2.0},
+         true);
   Vec3 rotationAxis(1, 0, 0);
-  //Vec3 rotationAxis(0, 0, 1);
-  double rotationAngle = M_PI / 4.0;
-  for (int i = 0; i < 48; i++) {
+  // Vec3 rotationAxis(0, 0, 1);
+  double rotationAngle = M_PI / 2.0;
+  for (int i = 0; i < 5; i++) {
     s.clear();
     for (size_t y = 0; y < s.getHeight(); y++) {
       for (size_t x = 0; x < s.getWidth(); x++) {
